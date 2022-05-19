@@ -26,10 +26,10 @@ spring:
         predicates:
           - Path=/createProduct/**
         filters:
-          - StripPrefix=2
+          - StripPrefix=1
       - id: createTransaction-service
         uri: http://localhost:8003
         predicates:
           - Path=/createTransaction/**
         filters:
-          - StripPrefix=2
+          - StripPrefix=1
