@@ -24,14 +24,12 @@ spring:
       - id: createProduct-service
         uri: http://localhost:8002
         predicates:
-          - Path=/createProduct/client/**
-          - Path=/createProduct/product/**
+          - Path=/createProduct/**
         filters:
           - StripPrefix=2
       - id: createTransaction-service
         uri: http://localhost:8003
         predicates:
-          - Path=/createTransaction/product/**
-          - Path=/createTransaction/transaction/**
+          - Path=/createTransaction/**
         filters:
           - StripPrefix=2

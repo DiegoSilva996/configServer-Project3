@@ -25,7 +25,7 @@ import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 @RestController
-@RequestMapping("/createProduct/client")
+@RequestMapping("/client")
 public class ClientController {
     @Autowired
     private ClientService clientService;
